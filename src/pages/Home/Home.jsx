@@ -3,6 +3,8 @@ import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import hero_banner from "../../assets/hero_banner.jpg";
 import hero_titile from "../../assets/hero_title.png";
+import play_icon from "../../assets/Play_icon.png";
+import info_icon from "../../assets/Info_icon.png";
 
 const Home = () => {
   return (
@@ -18,7 +20,11 @@ const Home = () => {
             fourth installment in the Predator franchise, but counting the Alien
             vs. Predator
           </p>
-          <div className="hero-btns"></div>
+          <div className="hero-btns">
+          <button className="btn"> <img src={play_icon} className=""></img>Play</button>
+          <button className="btn dark-btn"> <img src={info_icon} className=""></img>More Info </button>
+
+          </div>
         </div>
       </div>
     </div>

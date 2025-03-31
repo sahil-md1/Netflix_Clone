@@ -21,10 +21,15 @@ const Home = () => {
             vs. Predator
           </p>
           <div className="hero-btns">
-          <button className="btn"> <img src={play_icon} className=""></img>Play</button>
-          <button className="btn dark-btn"> <img src={info_icon} className=""></img>More Info </button>
-
-          </div>
+            <button className="btn">
+              {" "}
+              <img src={play_icon} className=""></img>Play
+            </button>
+            <button className="btn dark-btn">
+              {" "}
+              <img src={info_icon} className=""></img>More Info{" "}
+            </button>
+          </div> 
         </div>
       </div>
     </div>

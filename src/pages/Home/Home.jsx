@@ -7,6 +7,8 @@ import play_icon from "../../assets/Play_icon.png";
 import info_icon from "../../assets/Info_icon.png";
 
 const Home = () => {
+  console.log('cssx');
+  
   return (
     <div className="home">
       <Navbar />

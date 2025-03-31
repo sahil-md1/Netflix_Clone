@@ -8,6 +8,8 @@ import profile_img from "../../assets/profile_img.png";
 import caret_icon from "../../assets/caret_icon.svg";
 
 const Navbar = () => {
+  console.log('fsdf');
+  
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -31,6 +33,7 @@ const Navbar = () => {
           <div className="dropdown">
             <p>Sign Out from Netflix</p>
           </div>
+          
         </div>
       </div>
     </div>

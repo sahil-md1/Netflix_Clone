@@ -10,7 +10,7 @@
 
 .hero-caption {
   position: absolute;
-  width: 100%;
+  width: 94%;
   bottom: 0;
   padding-left: 6%;
 }
@@ -57,4 +57,12 @@
   background: #6d6d6eb3;
 }
 
+.hero-btns .btn:hover  {
+  cursor: pointer;
+  background: #ffffffbf;
+}
+
+.hero-btns .btn.dark-btn:hover {
+  background: #6d6d6e66;
+}
 

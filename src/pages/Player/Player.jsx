@@ -6,42 +6,42 @@ import { useNavigate, useParams } from "react-router-dom";
 const Player = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  // const [movieData, setMovieData] = useState({
-  //   name: "",
-  //   publishedAt: "",
-  //   type: "",
-  //   // url:''
-  // });
-  // const url = `https://tvshow.p.rapidapi.com/Video/${id}/Movie?Language=en-US`;
-  // const options = {
-  //   method: "GET",
-  //   headers: {
-  //     "x-rapidapi-key": "fd39ff7006msh93cb556bcde6227p16e0b1jsn787ae99114a9",
-  //     "x-rapidapi-host": "tvshow.p.rapidapi.com",
-  //   },
-  // };
+  const [movieData, setMovieData] = useState({
+    name: "",
+    publishedAt: "",
+    type: "",
+    // url:''
+  });
+  const url = `https://tvshow.p.rapidapi.com/Video/${id}/Movie?Language=en-US`;
+  const options = {
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": "fd39ff7006msh93cb556bcde6227p16e0b1jsn787ae99114a9",
+      "x-rapidapi-host": "tvshow.p.rapidapi.com",
+    },
+  };
 
-  // useEffect(() => {
-  //   fetch(url, options)
-  //     .then((response) => response.json())
-  //     .then((result) => {
-  //       if (Array.isArray(result) && result.length > 0) {
-  //         const movie = result[0]; // Get the first item from the API response
-  //         const youtubeUrl = movie.url;
+  useEffect(() => {
+    fetch(url, options)
+      .then((response) => response.json())
+      .then((result) => {
+        if (Array.isArray(result) && result.length > 0) {
+          const movie = result[0]; // Get the first item from the API response
+          const youtubeUrl = movie.url;
 
-  //         // Extract YouTube video ID
-  //         const videoId = youtubeUrl.split("v=")[1]?.split("&")[0] || "";
+          // Extract YouTube video ID
+          const videoId = youtubeUrl.split("v=")[1]?.split("&")[0] || "";
 
-  //         setMovieData({
-  //           ...movie,
-  //           videoId: videoId, // Store extracted video ID
-  //         });
-  //       }
-  //     })
-  //     .catch((error) => console.error("Error fetching data:", error));
-  // }, []);
+          setMovieData({
+            ...movie,
+            videoId: videoId, // Store extracted video ID
+          });
+        }
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
 
-  // console.log(movieData, "type");
+  console.log(movieData, "type");
 
   return (
     <div className="player">

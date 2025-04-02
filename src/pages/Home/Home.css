@@ -1,3 +1,5 @@
+
+
 .hero {
   position: relative;
 }
@@ -12,11 +14,10 @@
   position: absolute;
   width: 94%;
   bottom: 0;
-  padding-left: 6%;
+  padding-left: 4%;
 }
 .caption-img {
-  margin-bottom: 30px;
- 
+  margin-bottom: 18px;
   width: 90%;
   max-width: 420px;
 }
@@ -44,7 +45,7 @@
   display: inline-flex;
   align-items: center;
   margin-right: 15px;
-  /* gap: 10px; */
+  gap: 10px; 
   /* gap: 20px; */
   cursor: pointer;
   font-size: 15px;
@@ -68,6 +69,7 @@
 }
 
 .more-cards {
-  padding-left: 6%;
+  padding-left: 4%;
+  padding-right: 2%;
 }
 

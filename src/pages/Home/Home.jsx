@@ -6,6 +6,7 @@ import hero_titile from "../../assets/hero_title.png";
 import play_icon from "../../assets/Play_icon.png";
 import info_icon from "../../assets/Info_icon.png";
 import TitleCards from "../../components/TitleCards/TitleCards";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   console.log("cssx");
@@ -34,9 +35,15 @@ const Home = () => {
             </button>
           </div>
 
-          <TitleCards/>
+          <TitleCards />
         </div>
       </div>
+      <div className="more-cards"> 
+        <TitleCards name={"Only on Neflix"}  category={'TopRated'}/>
+        <TitleCards name={"Upcoming Movies"} category={'Popular'}/>
+        <TitleCards name={"Top Pics for you"} category={'UpComing'}/>
+      </div>
+      <Footer />
     </div>
   );
 };

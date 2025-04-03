@@ -3,8 +3,8 @@ import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import hero_banner from "../../assets/hero_banner3.jpg";
 import hero_titile from "../../assets/hero_title.png";
-// import play_icon from "../../assets/Play_icon.png";
-import info_icon from "../../assets/Info_icon.png";
+import play_icon from "../../assets/Play_icon.png";
+import info_icon from "../../assets/info_icon.png";
 import TitleCards from "../../components/TitleCards/TitleCards";
 import Footer from "../../components/Footer/Footer";
 
@@ -26,11 +26,16 @@ const Home = () => {
           <div className="hero-btns">
             <button className="btn">
               {" "}
-              <img src={info_icon} className=""></img>Play
+              <img 
+              // src={info_icon} className=""
+              >
+              </img>Play
             </button>
             <button className="btn dark-btn">
               {" "}
-              <img src={info_icon} className=""></img>More Info{" "}
+              <img 
+              // src={info_icon} 
+              className=""></img>More Info{" "}
             </button>
           </div>
 

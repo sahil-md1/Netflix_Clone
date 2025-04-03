@@ -73,3 +73,6 @@
   padding-right: 2%;
 }
 
+.info-img {
+  mix-blend-mode: multiply;
+}

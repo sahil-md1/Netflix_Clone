@@ -16,9 +16,13 @@ const Player = () => {
   const options = {
     method: "GET",
     headers: {
-      "x-rapidapi-key": "fd39ff7006msh93cb556bcde6227p16e0b1jsn787ae99114a9",
-      "x-rapidapi-host": "tvshow.p.rapidapi.com",
-    },
+      'x-rapidapi-key': '58d1990c26mshea4927b1ab7ed57p1afc7ajsn3ff192085637',
+      'x-rapidapi-host': 'tvshow.p.rapidapi.com'
+    }
+    // headers: {
+    //   "x-rapidapi-key": "fd39ff7006msh93cb556bcde6227p16e0b1jsn787ae99114a9",
+    //   "x-rapidapi-host": "tvshow.p.rapidapi.com",
+    // },
   };
 
   useEffect(() => {

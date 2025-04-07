@@ -8,6 +8,7 @@ import facebook_icon from '../../assets/facebook_icon.png'
 
 
 const Footer = () => {
+  console.log("log")
   return (
     <div className='footer'>
       <div className="footer-icons">

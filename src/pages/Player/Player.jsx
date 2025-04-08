@@ -46,7 +46,6 @@ const Player = () => {
   }, []);
 
   // console.log(movieData, "type"); 
-  // localStorage
 
   return (
     <div className="player">

@@ -45,7 +45,8 @@ const Player = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  console.log(movieData, "type");
+  // console.log(movieData, "type"); 
+  // localStorage
 
   return (
     <div className="player">

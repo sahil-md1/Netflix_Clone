@@ -9,7 +9,6 @@ import TitleCards from "../../components/TitleCards/TitleCards";
 import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
-console.log('dsd')
   return (
     <div className="home">
       <Navbar />

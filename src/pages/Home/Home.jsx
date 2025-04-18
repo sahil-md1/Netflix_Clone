@@ -20,13 +20,13 @@ const Home = () => {
             The Predator is a 2018 American science fiction action film directed
             by Shane Black, who co-wrote the script with Fred Dekker. It is the
             fourth installment in the Predator franchise, but counting the Alien
-            vs. Predator
+            vs. Predator.
           </p>
           <div className="hero-btns">
             <button className="btn">
               {" "}
               <img 
-              src={play} className=""
+              src={play} className="play"
               >
               </img>Play
             </button>

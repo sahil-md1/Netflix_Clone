@@ -45,8 +45,8 @@ const Player = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-//   console.log(movieData, "type"); 
-// console.log('data');
+  console.log(movieData, "type"); 
+console.log('data');
 
   return (
     <div className="player">

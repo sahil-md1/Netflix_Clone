@@ -46,7 +46,7 @@ const Player = () => {
   }, []);
 
   console.log(movieData, "type"); 
-console.log('data');
+// console.log('data');
 
   return (
     <div className="player">
